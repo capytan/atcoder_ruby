@@ -8,7 +8,6 @@ n.times do |no|
   ac_flag = false
 
   m.times do |i|
-
     break if ac_flag == true
 
     if submittions[i][0].to_i == no + 1

@@ -20,4 +20,3 @@ if popular_goods.inject(:+) >= m
 else
   puts "No"
 end
-
