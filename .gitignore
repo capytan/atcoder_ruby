@@ -57,3 +57,6 @@ build-iPhoneSimulator/
 
 ## RubyMine
 .idea/
+
+## for green_day
+.cookie-store
