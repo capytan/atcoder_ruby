@@ -1,5 +1,6 @@
 n = gets.to_i
 length = n.to_s.length
+
 unless length == 1
   n = ('9' * (length - 1)).to_i if length.odd?
   split = n.to_s.scan(/.{1,#{length / 2}}/)
