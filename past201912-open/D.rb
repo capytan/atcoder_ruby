@@ -1,14 +1,17 @@
-# TLE: 2207 ms, 27660 KB
 n = gets.to_i
 a = readlines.map(&:to_i)
-b = []
+b = Array.new(n, 0)
 
-1.upto n do |i|
-  b << a.count(i)
+a.each do |i|
+  t = i - 1
+  b[t] += 1
 end
 
-if b.all?(1)
-  puts 'Correct'
+before = b.index(0)
+after = b.index(2)
+
+if before
+  puts "#{(after + 1)} #{(before + 1)}"
 else
-  puts "#{(b.index(2) + 1)} #{(b.index(0) + 1)}"
+  puts 'Correct'
 end
