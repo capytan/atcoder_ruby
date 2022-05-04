@@ -4,6 +4,9 @@ takahashi = 0
 aoki = 0
 i = 0
 
+# memo: 繰り返しではWhileを使う
+# Rubyの繰り返し処理においてforやtimesは遅い
+# https://kona0001.hatenablog.com/entry/2021/06/07/170343
 while i < x
   takahashi += b if i % (a + c) < a
   aoki += e if i % (d + f) < d
