@@ -6,14 +6,16 @@ GEM
     diff-lcs (1.5.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    faraday (0.17.5)
-      multipart-post (>= 1.2, < 3)
+    faraday (2.2.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
     faraday-cookie_jar (0.0.7)
       faraday (>= 0.8.0)
       http-cookie (~> 1.0.0)
-    green_day (0.4.0)
+    faraday-net_http (2.0.2)
+    green_day (0.5.0)
       colorize
-      faraday (< 1.0)
+      faraday
       faraday-cookie_jar
       nokogiri
       parallel
@@ -23,11 +25,10 @@ GEM
       domain_name (~> 0.5)
     method_source (1.0.0)
     mini_portile2 (2.8.0)
-    multipart-post (2.1.1)
-    nokogiri (1.13.3)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    parallel (1.21.0)
+    parallel (1.22.1)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -41,14 +42,15 @@ GEM
     rspec-expectations (3.11.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
-    rspec-mocks (3.11.0)
+    rspec-mocks (3.11.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
     rspec-support (3.11.0)
+    ruby2_keywords (0.0.5)
     thor (1.2.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.8)
+    unf_ext (0.0.8.1)
     webrick (1.7.0)
 
 PLATFORMS
