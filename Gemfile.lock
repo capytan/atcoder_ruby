@@ -15,14 +15,12 @@ GEM
       faraday (>= 0.8.0)
       http-cookie (~> 1.0.0)
     faraday-net_http (3.0.2)
-    green_day (0.5.0)
+    green_day (1.0.0)
       colorize
       faraday
       faraday-cookie_jar
       nokogiri
-      parallel
       thor
-      webrick
     http-cookie (1.0.5)
       domain_name (~> 0.5)
     method_source (1.0.0)
@@ -30,7 +28,6 @@ GEM
     nokogiri (1.15.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    parallel (1.23.0)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -53,7 +50,6 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
-    webrick (1.8.1)
 
 PLATFORMS
   ruby
