@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 s = gets.chomp
 odd = []
 even = []
 s.each_char.with_index do |c, index|
-  odd << c if index % 2 == 0
+  odd << c if index.even?
 end
 s.each_char.with_index do |c, index|
-  even << c if index % 2 != 0
+  even << c if index.odd?
 end
 if s.length == 1 && s == s.downcase
   puts 'Yes'

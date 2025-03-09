@@ -1,21 +1,23 @@
+# frozen_string_literal: true
+
 n, a, b = gets.split.map(&:to_i)
 
 tiles = []
 w = 0
 
-while w < n do
-  s = ""
+while w < n
+  s = ''
   h = 0
-  while h < n do
-    if (w + h).odd?
-      s += "#" * b
-    else
-      s += "." * b
-    end
+  while h < n
+    s += if (w + h).odd?
+           '#' * b
+         else
+           '.' * b
+         end
     h += 1
   end
   j = 0
-  while j < a do
+  while j < a
     tiles << s
     j += 1
   end

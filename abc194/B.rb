@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 _n = gets.to_i
-ab =  readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
+ab = readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
 a = []
 b = []
 ab.each do |i|

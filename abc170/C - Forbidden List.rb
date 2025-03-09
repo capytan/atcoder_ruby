@@ -9,4 +9,4 @@ end
 
 p = gets.split.map(&:to_i)
 q = [*0..101] - p
-puts q.min_by { |i| (i - x).abs }
+puts(q.min_by { |i| (i - x).abs })

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 s = gets.chomp
 
 if s == s.upcase
@@ -10,7 +12,7 @@ if s == s.downcase
   exit
 end
 
-if s.length == s.split("").uniq.length
+if s.length == s.split('').uniq.length
   puts 'Yes'
 else
   puts 'No'

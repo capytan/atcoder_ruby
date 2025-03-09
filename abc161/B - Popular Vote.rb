@@ -1,4 +1,6 @@
-n, m = gets.split.map(&:to_i)
+# frozen_string_literal: true
+
+_, m = gets.split.map(&:to_i)
 goods = gets.split.map(&:to_i)
 votes = goods.inject(:+)
 popular_goods = []
@@ -16,7 +18,7 @@ goods.each do |good|
 end
 
 if popular_goods.inject(:+) >= m
-  puts "Yes"
+  puts 'Yes'
 else
-  puts "No"
+  puts 'No'
 end

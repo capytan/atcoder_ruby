@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 _n = gets.to_i
 results = readlines.map(&:chomp)
 ac = 0
@@ -6,13 +8,14 @@ tle = 0
 re = 0
 
 results.each do |r|
-  if r == 'ac'
+  case r
+  when 'ac'
     ac += 1
-  elsif r == 'wa'
+  when 'wa'
     wa += 1
-  elsif r == 'tle'
+  when 'tle'
     wa += 1
-  elsif r == 're'
+  when 're'
     wa += 1
   end
 end

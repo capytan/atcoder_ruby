@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # 誤答
 n, m = gets.split.map(&:to_i)
 submittions = readlines.map(&:chomp).map(&:split)
@@ -11,7 +13,7 @@ n.times do |no|
     break if ac_flag == true
 
     if submittions[i][0].to_i == no + 1
-      if submittions[i][1] == "WA"
+      if submittions[i][1] == 'WA'
         wa_count += 1
       else
         ac_count += 1

@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 s, t, x = gets.split.map(&:to_i)
 
-if s == 0 && x < t
+if s.zero? && x < t
   puts 'Yes'
-elsif t == 0 && s <= x
+elsif t.zero? && s <= x
   puts 'Yes'
 elsif s < t && s <= x && t > x
   puts 'Yes'

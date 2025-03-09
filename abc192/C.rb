@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 n, k = gets.split.map(&:to_i)
 
 def g1(int)
@@ -13,7 +15,7 @@ def f(int)
 end
 
 before_value = n
-k.times do |i|
+k.times do |_i|
   before_value = f(before_value)
 end
 

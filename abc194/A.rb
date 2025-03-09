@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a, b = gets.split.map(&:to_i)
 
 if a + b >= 15 && b >= 8

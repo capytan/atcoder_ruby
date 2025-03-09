@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a, b, c, d, e, f, x = gets.split.map(&:to_i)
 
 takahashi = 0

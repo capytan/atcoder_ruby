@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 n = gets.to_i
 a = readlines.map(&:to_i)
 b = Array.new(n, 0)
@@ -11,7 +13,7 @@ before = b.index(0)
 after = b.index(2)
 
 if before
-  puts "#{(after + 1)} #{(before + 1)}"
+  puts "#{after + 1} #{before + 1}"
 else
   puts 'Correct'
 end

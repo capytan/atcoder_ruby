@@ -1,15 +1,15 @@
+# frozen_string_literal: true
+
 a = gets.to_i
 b = gets.to_i
 c = gets.to_i
 x = gets.to_i
 count = 0
 
-for l in 0..a do
-  for m in 0..b do
-    for n in 0..c do
-      if 500 * l + 100 * m + 50 * n == x
-        count += 1
-      end
+(0..a).each do |l|
+  (0..b).each do |m|
+    (0..c).each do |n|
+      count += 1 if 500 * l + 100 * m + 50 * n == x
     end
   end
 end

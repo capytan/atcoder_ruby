@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 a, b = gets.split.map(&:chomp)
 
 def sum_of_digits(n)
-  n.split("").map { |s| s.to_i }.sum
+  n.split('').map(&:to_i).sum
   # n.split("").map { |s| s.to_i }.inject(:+)
 end
 

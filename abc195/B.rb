@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 a, b, w = gets.split.map(&:to_i)
 # p a
 # p b
@@ -9,23 +11,21 @@ answer = []
 p "max: #{max}"
 p "min: #{min}"
 
-for num in min..max do
+(min..max).each do |num|
   p num
   rest = (w * 1000) - num * b
-  if rest < 0
-  elsif rest == 0
+  if rest.negative?
+  elsif rest.zero?
     answer.push(num)
-  elsif rest % a == 0
+  elsif (rest % a).zero?
     count = num + (rest / a)
     answer.push(count)
-  else
-    
   end
 
   rest = (w * 1000) - num * a
-  if rest == 0
+  if rest.zero?
     answer.push(num)
-  elsif rest % b == 0
+  elsif (rest % b).zero?
     count = num + (rest / b)
     answer.push(count)
   end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'abc396/A.rb' do
   it 'test with "5\n1 4 4 4 2\n"' do
     io = IO.popen('ruby abc396/A.rb', 'w+')
@@ -33,5 +35,4 @@ RSpec.describe 'abc396/A.rb' do
     io.close_write
     expect(io.readlines.join).to eq("Yes\n")
   end
-
 end
