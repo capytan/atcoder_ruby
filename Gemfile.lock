@@ -79,6 +79,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  arm64-darwin-23
   arm64-darwin-24
 
 DEPENDENCIES
@@ -88,4 +89,4 @@ DEPENDENCIES
   rubocop
 
 BUNDLED WITH
-   2.6.7
+   2.7.2
